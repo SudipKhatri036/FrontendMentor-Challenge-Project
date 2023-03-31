@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+/* Global Style */
+body {
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+#cross {
+  font-size: 1rem;
+  color: black;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+/*Nav Section Start */
+
+nav {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  margin-left: 20px;
+}
+h2 {
+  font-size: 2.5rem;
+  color: hsl(240, 100%, 5%);
+  font-weight: bold;
+  margin-left: 10px;
+}
+nav li a {
+  margin-right: 30px;
+  font-size: 0.9rem;
+  color: hsl(236, 13%, 42%);
+  transition: 0.3s ease;
+}
+nav li :hover {
+  color: hsl(5, 85%, 63%);
+}
+#nav-bar-btn {
+  display: none;
+}
+/* Nav Section End */
+/* Show nav BAr */
+.show-navbar {
+  width: 70%;
+  height: 120%;
+  display: flex;
+  position: relative;
+  top: -91px;
+  right: -130px;
+  color: black;
+  background-color: white;
+  display: none;
+}
+.show-navbar ul {
+  position: relative;
+  top: 5rem;
+  left: 0rem;
+  height: 100vh;
+  margin: 20px 0px 20px 40px;
+}
+.show-navbar ul li {
+  color: black;
+  margin-top: 20px;
+}
+.show-navbar a {
+  color: black;
+  cursor: pointer;
+}
+
+.show-navbar #cross {
+  position: absolute;
+  right: 3rem;
+  width: 15%;
+  height: 60px;
+  font-size: 2rem;
+  color: black;
+  border: none;
+  background-color: white;
+  font-weight: 400;
+}
+#nav-bar-btn {
+  display: none !important;
+}
+/* Show Nav Bar End */
+i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/* Hero container Start*/
+#hero-container {
+  display: flex;
+  height: 475px;
+}
+/* Hero container End */
+/* Section 1 start */
+#hero-section1 {
+  width: 100%;
+}
+#hero-section1 img {
+  width: 96%;
+  height: 40%;
+}
+#hero-section1 h2 {
+  width: 40%;
+}
+#content-wrapper {
+  width: 96%;
+  display: flex;
+}
+#content {
+  width: 60%;
+  margin-left: 12px;
+  margin-top: 2.5rem;
+}
+#content p {
+  font-size: 0.93rem;
+  color: hsl(236, 13%, 42%);
+}
+#content button {
+  padding: 12px 35px;
+  margin-top: 1.8rem;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+  border: none;
+}
+#content button:hover {
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+}
+/* Section 2 start */
+#hero-section2 {
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+  height: 100%;
+  width: 45%;
+  padding: 0px 20px;
+}
+#hero-section2 li {
+  margin-bottom: 15px;
+}
+#hero-section2 a {
+  color: white;
+}
+hr {
+  width: 100%;
+  border-top: 1px solid white;
+  opacity: 0.3;
+}
+#hero-section2 h3 {
+  font-size: 1.7rem;
+  color: hsl(35, 77%, 62%);
+  margin: 0;
+  margin-top: 18px;
+}
+#hero-section2 h4 {
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+#hero-section2 p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: hsl(36, 100%, 99%);
+  opacity: 0.7;
+}
+#hero-section2 li a:hover {
+  color: hsl(35, 77%, 62%);
+}
+/* Section 2 end */
+
+/* Last Section start */
+#small-card-container {
+  width: 100%;
+  height: 10.62rem;
+  margin: 30px auto 35px auto;
+}
+#small-card-container ul {
+  width: 100%;
+  display: flex;
+  margin-right: 10px;
+}
+#small-card-container ul li {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+#small-card-container ul img {
+  width: 25%;
+  height: 90%;
+  margin-right: 14px;
+}
+#small-card-container ul div {
+  height: 100%;
+}
+#small-card-container ul h4,
+h5 {
+  margin: 0;
+}
+#small-card-container ul h4 {
+  font-size: 1.4rem;
+  color: hsl(233, 8%, 79%);
+}
+#small-card-container ul h5 {
+  margin: 10px auto;
+  font-weight: bold;
+  color: hsl(240, 100%, 5%);
+}
+#small-card-container ul p {
+  font-size: 0.7rem;
+}
+#small-card-container a :hover {
+  transition: 0.3s ease;
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+/* Last Section end */
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Query starts */
+
+@media only screen and (max-width: 700px) {
+  h2 {
+    font-size: 2rem;
+  }
+  #content p {
+    font-size: 0.7rem;
+  }
+  #content button {
+    font-size: 1rem;
+  }
+  #hero-section2 p {
+    font-size: 0.6rem;
+  }
+  #small-card-container ul img {
+    width: 30%;
+    height: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #desk-nav {
+    display: none;
+  }
+  #nav-bar-btn {
+    display: block !important;
+  }
+  .show-navbar {
+    width: 70%;
+    right: -187px;
+  }
+}
+@media only screen and (max-width: 456px) {
+  body {
+    margin: auto;
+  }
+  #desk-nav {
+    display: none;
+  }
+  #nav-container h2 {
+    margin: 0;
+  }
+  #nav-container nav {
+    width: 90%;
+  }
+  #hero-container {
+    display: block;
+    height: 60rem;
+  }
+  #hero-section1 img {
+    height: 17.18rem;
+  }
+  #content-wrapper {
+    width: 100%;
+    display: block;
+  }
+  #content-wrapper h2,
+  #content {
+    width: 90%;
+  }
+  #content button {
+    background-color: hsl(5, 85%, 63%);
+    font-weight: 400;
+  }
+  #hero-section2 {
+    display: block;
+    width: 90%;
+    height: 22rem;
+    margin-bottom: 20px;
+  }
+  #hero-section2 h3 {
+    padding-top: 20px;
+  }
+  #small-card-container {
+    height: 36rem;
+  }
+  #small-card-container ul {
+    display: block;
+  }
+  #small-card-container ul li {
+    padding-bottom: 20px;
+  }
+  #small-card-container ul h4 {
+    font-size: 2rem;
+    padding-top: 10px;
+  }
+  #small-card-container ul a {
+    font-size: 1.5rem;
+  }
+  #small-card-container ul p {
+    font-size: 1.1rem;
+    color: hsl(236, 13%, 42%);
+  }
+
+  .attribution {
+    margin-top: 4rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #hero-container {
+    height: 77rem;
+    width: 85%;
+  }
+  nav {
+    height: 17vh;
+  }
+  .show-navbar #cross {
+    top: 36px;
+  }
+  #hero-section2 {
+    height: 30rem;
+  }
+
+  #small-card-container {
+    height: 35rem;
+  }
+  #small-card-container ul img {
+    height: 178px;
+  }
+  #small-card-container ul h4 {
+    font-size: 1.5rem;
+  }
+  #small-card-container ul h5 {
+    font-size: 1rem;
+  }
+  #small-card-container ul p {
+    font-size: 0.7rem;
+  }
+  .show-navbar {
+    width: 87%;
+    right: -44px;
+  }
+}
