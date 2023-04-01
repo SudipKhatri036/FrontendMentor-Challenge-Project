@@ -10,7 +10,8 @@ body {
 main {
   max-width: 1440px;
   width: 100%;
-  margin: 0.8em auto;
+  min-height: 100vh;
+  margin: auto auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,14 +59,10 @@ main {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 436px) {
-  main {
-    margin-top: 10px;
-  }
-
+  @media only screen and (max-width: 436px) {
   #card-container {
-    width: 50%;
-    margin: 10px auto;
-    margin-top: 30px;
+    width: 80%;
+    margin: auto auto;
   }
 }
+
