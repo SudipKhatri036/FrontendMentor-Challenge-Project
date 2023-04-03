@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- For Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- For Font Awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/0ba6a4d109.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Results summary component</title>
+  </head>
+  <body>
+    <main>
+      <section id="content-container">
+        <div class="container-one">
+          <div class="content">
+            <h2>Your Result</h2>
+            <div id="circle-view">
+              <p id="circle-content"><span>76</span>of 100</p>
+            </div>
+            <h3>Great</h3>
+            <p>
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+        <div class="container-two">
+          <div class="content2">
+            <h2>Summary</h2>
+            <ul>
+              <li class="reaction-container">
+                <div>
+                  <img
+                    src="/assets/images/icon-reaction.svg"
+                    alt="Reaction logo"
+                  />
+                  <h4 class="reaction">Reaction</h4>
+                </div>
+                <p><span class="span-El">80</span>/100</p>
+              </li>
+              <li class="memory-container">
+                <div>
+                  <img src="/assets/images/icon-memory.svg" alt="Memory Svg" />
+                  <h4 class="memory">Memory</h4>
+                </div>
+                <p><span class="span-El">92</span>/100</p>
+              </li>
+              <li class="verbal-container">
+                <div>
+                  <img src="/assets/images/icon-verbal.svg" alt="Verbal Svg" />
+                  <h4 class="verbal">Verbal</h4>
+                </div>
+                <p><span class="span-El">61</span>/100</p>
+              </li>
+              <li class="visual-container">
+                <div>
+                  <img
+                    src="/assets/images/icon-visual.svg"
+                    alt="visual Svg icon"
+                  />
+                  <h4 class="visual">Visual</h4>
+                </div>
+                <p><span class="span-El">72</span>/100</p>
+              </li>
+            </ul>
+            <button id="continue">Continue</button>
+          </div>
+        </div>
+      </section>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Sudip Khatri</a>.
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  color: black;
+  padding: 0;
+}
+ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
+main {
+  max-width: 1440px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#content-container {
+  max-width: 720px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container one styling start */
+
+.container-one {
+  width: 40%;
+  text-align: center;
+  padding: 1.7em 0em;
+  border-radius: 12px;
+  background: linear-gradient(150deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+.content {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.container-one h2 {
+  color: hsl(241, 100%, 89%);
+  margin-bottom: 0.2em;
+}
+
+.container-one .content h3 {
+  font-size: 1.2rem;
+}
+
+.container-one #circle-view {
+  width: 50%;
+  margin: 1.2em auto;
+  background: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0.2)
+  );
+  padding: 1.2em 0em;
+  border-radius: 50%;
+}
+
+.container-one p {
+  color: hsl(241, 100%, 89%);
+  font-size: 0.9rem;
+}
+
+.container-one #circle-view span {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#circle-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container one styling End */
+
+/* Container two styling Start*/
+
+.container-two {
+  width: 40%;
+  border-radius: 12px;
+  padding: 1em 1em;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.content2 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.content2 h2 {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+
+.content2 li {
+  width: 100%;
+  padding: 0em 0.5em;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2em;
+}
+
+.content2 li div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content2 h4 {
+  margin: 0;
+  margin-left: 0.4em;
+}
+
+/* Summary Container styling Start */
+
+.reaction-container {
+  background: rgba(255, 87, 87, 0.05);
+  border-radius: 10px;
+}
+
+.reaction-container .reaction {
+  color: hsl(0, 100%, 67%);
+  opacity: 0.8;
+}
+
+.memory-container .memory {
+  color: hsl(39, 100%, 56%);
+}
+
+.memory-container {
+  background-color: hsla(39, 100%, 56%, 0.05);
+  border-radius: 10px;
+}
+
+.verbal-container .verbal {
+  color: hsl(166, 100%, 37%);
+}
+
+.verbal-container {
+  background-color: hsla(166, 100%, 37%, 0.05);
+  border-radius: 10px;
+}
+
+.visual-container .visual {
+  color: hsl(234, 85%, 45%);
+}
+
+.visual-container {
+  background-color: hsla(234, 85%, 45%, 0.05);
+  border-radius: 10px;
+}
+
+/* Summary Container Styling End */
+
+.span-El {
+  font-family: "Hanken Grotesk", sans-serif;
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+  margin-right: 0.3em;
+}
+#continue {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0.9rem;
+  padding: 0.7em 1.5em;
+  border-radius: 18px;
+  border: none;
+  color: white;
+  background-color: hsl(224, 30%, 27%);
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+
+#continue:hover {
+  background-color: hsl(241, 81%, 54%);
+}
+
+/* Container two styling End */
+
+/* Attribution Styling Start */
+
+.attribution {
+  margin-top: 2em;
+  font-size: 14px;
+  text-align: center;
+  color: hsl(234, 85%, 45%);
+}
+.attribution a {
+  color: hsl(224, 30%, 27%);
+  font-weight: bold;
+}
+
+/* Attribution Styling End */
+
+/* Media Query Start */
+
+@media only screen and (max-width: 415px) {
+  main {
+    width: 100%;
+  }
+
+  #content-container {
+    flex-direction: column;
+  }
+
+  .container-one {
+    width: 100%;
+    border-radius: 30px;
+    padding-top: 7em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-one #circle-view {
+    width: 40%;
+  }
+
+  .container-two {
+    width: 100%;
+    padding: 1em 0em;
+  }
+
+  .content2 {
+    width: 80%;
+  }
+
+  .attribution {
+    font-size: 10px;
+  }
+}
+
+/* Media Query End */
