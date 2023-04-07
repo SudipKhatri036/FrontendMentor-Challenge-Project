@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  color: white;
+}
+
+#card-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#card-content {
+  max-width: 375px;
+  width: 80%;
+  padding: 1.2em 1em;
+  border-radius: 18px;
+  background-color: hsl(213, 19%, 18%);
+}
+
+/* Star Logo Styling Start */
+
+.img-div {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 0.4em;
+  background-color: rgb(149 158 172 / 15%);
+  border-radius: 50%;
+}
+
+.img-div img {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Star Logo Styling End */
+
+/* Content Styling Start */
+
+.content {
+  margin-bottom: 1em;
+}
+
+.content h2 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin: 1em auto 0.5em auto;
+}
+
+.para-el {
+  width: 100%;
+  font-size: 0.9rem;
+  color: hsl(217, 12%, 63%);
+}
+
+/* Content Styling End */
+
+/* Rating Styling Start */
+
+ol {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+Ol li {
+  width: 50px;
+  height: 50px;
+}
+
+Ol li button {
+  font-family: "Overpass", sans-serif;
+  width: 100%;
+  height: 100%;
+  color: hsl(217, 12%, 63%);
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(149 158 172 / 15%);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+Ol li button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+/* Rating Styling End */
+
+/* Submit Btn Styling Start */
+.submit-btn {
+  width: 100%;
+  padding: 0.8em 1em;
+  margin: 1em auto;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  font-family: "Overpass", sans-serif;
+  letter-spacing: 0.1em;
+  color: white;
+  background: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.active {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+/* Submit Btn Styling End */
+
+/* Attribution Styling Start */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2em;
+  width: 90%;
+}
+.attribution a {
+  color: hsl(25, 97%, 53%);
+}
+
+/* Attribution Styling End */
+
+/* After Rating styling */
+#after-rating {
+  max-width: 375px;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#after-rating img {
+  margin-top: 1em;
+}
+
+#after-rating h2 {
+  margin: 0.8em;
+}
+
+.rating-detail {
+  display: inline;
+  margin-top: 2em;
+  border-radius: 12px;
+  padding: 0.4em 1em;
+  color: hsl(25, 97%, 53%);
+  font-weight: 400;
+  font-size: 0.9rem;
+  background-color: rgb(149 158 172 / 15%);
+}
+
+/* After Rating Styling End */
+
+/* Media Queries */
+@media only screen and (max-width: 340px) {
+  Ol li {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.3em;
+  }
+}
