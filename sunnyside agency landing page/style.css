@@ -68,10 +68,10 @@ header {
 
 .header-content li a.active {
   font-family: "Fraunces", serif;
-  padding: 0.5em 1em;
+  padding: 1em 1.2em;
   color: black;
   background-color: hsl(0, 0%, 100%);
-  border-radius: 8px;
+  border-radius: 20px;
   font-weight: bold;
   text-transform: uppercase;
 }
