@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/calculatorlogo.png"
+    />
+
+    <title>Age calculator app</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main></main>
+    <div id="container">
+      <form>
+        <div class="input-container">
+          <label for="day-input">Day</label>
+          <input
+            type="number"
+            id="day-input"
+            name="day-input"
+            placeholder="DD"
+            required
+          />
+          <p class="error error-output-day"></p>
+        </div>
+        <div class="input-container">
+          <label for="month-input">Month</label>
+          <input
+            type="number"
+            name="month-input"
+            id="month-input"
+            placeholder="MM"
+            required
+          />
+          <p class="error error-output-month"></p>
+        </div>
+        <div class="input-container">
+          <label for="year-input">Year</label>
+          <input
+            type="number"
+            name="year-input"
+            id="year-input"
+            placeholder="YYYY"
+            required
+          />
+          <p class="error error-output-year"></p>
+        </div>
+      </form>
+      <div class="btn-container">
+        <div id="border"></div>
+        <button id="checkAge">
+          <img src="/assets/images/icon-arrow.svg" alt="Arrow Svg" />
+        </button>
+      </div>
+
+      <div id="show-result-output">
+        <h2><span id="year-span">--</span> years</h2>
+        <h2><span id="month-span">--</span> months</h2>
+        <h2><span id="day-span">--</span> days</h2>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sudip Khatri</a>.
+    </div>
+  </body>
+</html>

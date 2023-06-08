@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  min-width: 375px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+}
+
+/* Main content styling start */
+#container {
+  width: 50%;
+  margin: 0 auto;
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.2em;
+  border-radius: 12px;
+  border-bottom-right-radius: 8em;
+}
+
+form {
+  display: flex;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 1em;
+}
+
+form label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: hsl(0, 1%, 44%);
+}
+
+form input {
+  min-width: 50px;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0.3em 0.5em;
+  margin: 0.2em 0;
+  font-weight: 600;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 4px;
+  resize: vertical;
+  color: hsl(0, 0%, 8%);
+}
+
+.error {
+  font-size: 0.5rem;
+  color: hsl(0, 100%, 67%);
+}
+
+/* Btn styling start */
+.btn-container {
+  position: relative;
+  display: block;
+  height: 5vh;
+  margin-top: 2em;
+}
+
+#border {
+  width: 90%;
+  height: 2px;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+.btn-container button {
+  position: absolute;
+  right: 5%;
+  bottom: 0%;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+  padding: 0.4em;
+  font-size: 0.8rem;
+  margin-top: 0.6em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-container button:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+
+button img {
+  width: 80%;
+}
+
+/* Btn styling end */
+
+#show-result-output h2 {
+  font-size: 3rem;
+  color: hsl(0, 0%, 8%);
+}
+
+#show-result-output span {
+  color: hsl(259, 100%, 65%);
+}
+
+/* Main Content styling end */
+
+/* Attribution styling start */
+.attribution {
+  font-size: 0.5rem;
+  text-align: center;
+  width: 50%;
+  margin-top: 2em;
+  color: hsl(259, 100%, 65%);
+}
+
+.attribution a {
+  color: hsl(0, 0%, 8%);
+}
+
+/* Attribution styling end */
+
+/* Media query Starts */
+@media only screen and (max-width: 640px) {
+  #container {
+    border-bottom-right-radius: 6em;
+  }
+
+  form label {
+    font-size: 0.5rem;
+  }
+
+  form input {
+    font-size: 0.9rem;
+  }
+
+  #show-result-output h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #container {
+    border-bottom-right-radius: 4em;
+  }
+
+  .input-container {
+    width: 25%;
+  }
+
+  form input {
+    font-size: 0.7rem;
+  }
+
+  .btn-container {
+    display: block;
+    margin-top: 1.5em;
+  }
+
+  .btn-container button {
+    right: 40%;
+    bottom: 30%;
+    padding: 0.2em;
+  }
+
+  button img {
+    width: 50%;
+  }
+
+  #show-result-output h2 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Media Query end */
