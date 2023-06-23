@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  max-width: 1440px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 41%, 84%);
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+header h1 {
+  font-size: 1.2rem;
+  color: hsl(186, 14%, 43%);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+main {
+  max-width: 750px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2em;
+  border-radius: 20px;
+  gap: 4em;
+}
+
+section {
+  width: 100%;
+}
+
+.input-container {
+  position: relative;
+}
+
+div {
+  margin: 2em 0;
+}
+
+h2 {
+  font-size: 0.8rem;
+  color: hsl(184, 14%, 56%);
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+input {
+  font-family: inherit;
+  text-align: right;
+  padding: 0.8em 1em;
+  width: 100%;
+  border: transparent;
+  background-color: hsl(189, 41%, 97%);
+  outline: none;
+  border-radius: 4px;
+  color: hsl(183, 100%, 15%);
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+}
+
+input:focus {
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+
+/* Error Styling Start */
+.error-output {
+  display: none;
+  font-size: 0.6rem;
+  color: #c46e5f;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  padding: 0;
+}
+
+input.error {
+  border: 1px solid #c46e5f;
+}
+
+/* Error Styling End */
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0.7em;
+  grid-row-gap: 0.8em;
+}
+
+button,
+#grid-container input {
+  font-family: inherit;
+  width: 100%;
+  padding: 0.4em;
+}
+
+.tip-btn {
+  border: transparent;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 4px;
+  color: white;
+}
+
+.tip-btn:hover {
+  cursor: pointer;
+  color: hsl(183, 100%, 15%);
+  background-color: hsla(172, 67%, 45%, 0.596);
+}
+
+.tip-btn.active {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(173, 61%, 77%);
+}
+
+.tip-percent-input {
+  padding: auto 0.2em;
+}
+
+/* Result Section Starts */
+
+#result-section {
+  position: relative;
+  width: 100%;
+  padding: 0 1em;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 8px;
+}
+
+#result-section .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex h2 {
+  font-size: 0.6rem;
+  color: white;
+}
+
+h2 span {
+  color: hsl(184, 14%, 56%);
+}
+
+.flex h3 {
+  color: hsl(172, 67%, 45%);
+  font-size: 2rem;
+}
+
+#result-section button {
+  font-family: inherit;
+  font-weight: bold;
+  position: absolute;
+  padding: 0.6em 0;
+  width: 80%;
+  bottom: 5%;
+  left: 10%;
+  background-color: hsl(172, 67%, 45%);
+  border: transparent;
+  border-radius: 4px;
+  color: hsl(183, 100%, 15%);
+}
+
+#result-section button:hover {
+  cursor: pointer;
+  background-color: hsl(173, 61%, 77%);
+}
+
+#result-section .disable {
+  background-color: hsl(183, 51%, 31%);
+}
+
+#result-section .disable:hover {
+  background-color: hsl(183, 51%, 31%);
+}
+/* Result Section End */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(183, 100%, 15%);
+}
+
+/* Media query Start */
+@media only screen and (max-width: 500px) {
+  body {
+    padding-top: 3em;
+    height: auto;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 1.2em;
+  }
+
+  #result-section {
+    padding: 3em 1em;
+  }
+}
+
+@media only screen and (max-width: 275px) {
+  h2 {
+    font-size: 0.6rem;
+  }
+
+  #error-output {
+    font-size: 0.4rem;
+  }
+
+  .flex h2 {
+    font-size: 0.4rem;
+  }
+
+  .flex h3 {
+    font-size: 1.2rem;
+  }
+}
+/* Media query End */
