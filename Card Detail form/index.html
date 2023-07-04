@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <div id="card-container">
+        <div id="card-front-container" class="card-content">
+          <img src="/images/card-logo.svg" alt="Card Logo" />
+          <p id="card-number">0000 0000 0000 0000</p>
+          <div id="name-expdate-container">
+            <h2 id="name-el">Jane Appleseed</h2>
+            <p id="expiry-date">
+              <span id="exp-month">00</span>/<span id="exp-year">00</span>
+            </p>
+          </div>
+        </div>
+        <div id="card-back-container" class="card-content">
+          <p id="cvc-number">000</p>
+        </div>
+      </div>
+      <div id="second-container">
+        <form>
+          <label for="user-name">Cardholder name</label>
+          <input
+            type="text"
+            id="user-name"
+            name="user-name"
+            placeholder="e.g. Jane Appleseed"
+            required
+          />
+          <p class="error-output name-error">Can't be blank</p>
+          <label for="user-name">Card Number</label>
+          <input
+            type="text"
+            id="card-num"
+            name="card-num"
+            maxlength="19"
+            placeholder="e.g. 1234 5678 9123 0000"
+            required
+          />
+          <p class="error-output card-num-error">Wrong format, numbers only</p>
+          <div class="flex-container">
+            <div class="exp-date-div">
+              <label>Exp. Date (mm/yy)</label>
+              <input
+                type="text"
+                id="exp-month-input"
+                class="exp-date-input"
+                name="exp-date-month"
+                placeholder="MM"
+                maxlength="2"
+                required
+              />
+              <input
+                type="text"
+                id="exp-year-input"
+                class="exp-date-input"
+                name="exp-date-year"
+                placeholder="YY"
+                maxlength="2"
+                required
+              />
+              <p class="error-output exp-date-error">Can't be blank</p>
+            </div>
+            <div class="cvc-div">
+              <label for="cvc-num">CVC</label>
+              <input
+                type="text"
+                placeholder="e.g. 123"
+                id="cvc-num"
+                name="cvc-num"
+                maxlength="3"
+                required
+              />
+              <p class="error-output cvc-error">Can't be blank</p>
+            </div>
+          </div>
+          <input type="button" value="Confirm" id="confirm-btn" class="btn" />
+        </form>
+        <!-- Completed state start -->
+        <div id="succes-stat">
+          <img src="/images/icon-complete.svg" alt="Completed Icon" />
+          <h1>Thank you!</h1>
+          <p>We've added your card details</p>
+          <button class="btn" id="continue-btn">Continue</button>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/SudipKhatri036" target="_blank"
+        >Sudip Khatri</a
+      >.
+    </div>
+  </body>
+</html>

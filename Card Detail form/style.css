@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#card-container {
+  position: relative;
+  background-image: url(/images/bg-main-mobile.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 35%;
+}
+
+#card-front-container {
+  border-radius: 6px;
+  width: 100%;
+  background-image: url(/images/bg-card-front.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh;
+  position: relative;
+  top: 15%;
+  left: 20%;
+  padding: 1em;
+}
+
+#card-number {
+  color: white;
+  font-size: 1.4rem;
+  position: absolute;
+  bottom: 30%;
+  left: 5%;
+  transform: translate(0%, 50%);
+  letter-spacing: 3px;
+}
+
+#name-expdate-container {
+  width: 90%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2px;
+}
+
+#name-expdate-container h2,
+#name-expdate-container p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+#card-back-container {
+  border-radius: 6px;
+  background-image: url(/images/bg-card-back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh;
+  position: relative;
+  top: 20%;
+  left: 45%;
+}
+
+#card-back-container p {
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2px;
+}
+
+#second-container {
+  width: 65%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2em;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+.card-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+form {
+  width: 50%;
+}
+
+form label {
+  display: block;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: hsl(278, 68%, 11%);
+  font-weight: bold;
+  width: 100%;
+  margin: 2em 0 1em 0;
+}
+
+form input {
+  width: 100%;
+  padding: 0.5em 0;
+  padding-left: 1em;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  border: 1px solid hsl(270, 3%, 87%);
+}
+
+input:focus {
+  border: 1px solid hsl(249, 99%, 64%);
+}
+
+.error-output {
+  display: none;
+  font-size: 0.6rem;
+  margin-top: 0.4em;
+  color: hsl(0, 100%, 66%);
+}
+
+.error {
+  border: 1px solid hsl(0, 100%, 66%);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exp-date-div {
+  width: 60%;
+}
+
+.exp-date-input {
+  border-radius: 6px;
+  width: 40%;
+  margin-right: 0.3em;
+}
+
+.cvc-div {
+  width: 60%;
+}
+
+#cvc-num {
+  width: 100%;
+}
+
+.btn {
+  width: 100%;
+  color: white;
+  margin-top: 2em;
+  font-family: inherit;
+  background-color: hsl(278, 68%, 11%);
+  border: transparent;
+  padding: 0.8em 0;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#succes-stat {
+  display: none;
+  width: 50%;
+  text-align: center;
+}
+
+#succes-stat img {
+  width: 15%;
+  margin-bottom: 1em;
+}
+
+#succes-stat h1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: hsl(278, 68%, 11%);
+}
+
+#succes-stat p {
+  color: hsl(279, 6%, 55%);
+  margin-top: 0.5em;
+  font-size: 0.7rem;
+}
+
+#succes-stat .btn {
+  width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(278, 94%, 30%);
+  font-weight: bold;
+}
+.attribution a {
+  font-weight: 300;
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Query Start */
+
+@media only screen and (max-width: 935px) {
+  #card-number {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 812px) {
+  #card-number {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 705px) {
+  #card-number {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  #card-front-container,
+  #card-back-container {
+    height: 20vh;
+  }
+
+  #card-number {
+    font-size: 0.6rem;
+  }
+
+  #name-expdate-container h2,
+  #name-expdate-container p {
+    font-size: 0.4rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main {
+    flex-direction: column;
+  }
+
+  #card-container {
+    width: 100%;
+    background-image: url(/images/bg-main-mobile.png);
+    height: 35vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #card-front-container,
+  #card-back-container {
+    height: 25vh;
+    width: 70%;
+  }
+
+  #card-front-container {
+    z-index: 1;
+    left: 5%;
+    top: 50%;
+  }
+
+  #card-number {
+    font-size: 1.2rem;
+  }
+
+  #name-expdate-container h2,
+  #name-expdate-container p {
+    font-size: 0.7rem;
+  }
+
+  #card-back-container {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+  }
+
+  #second-container {
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 406px) {
+  #card-number {
+    font-size: 0.8rem;
+  }
+
+  #name-expdate-container h2,
+  #name-expdate-container p {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 406px) {
+  #card-number {
+    font-size: 0.6rem;
+  }
+
+  #name-expdate-container h2,
+  #name-expdate-container p {
+    font-size: 0.4rem;
+  }
+
+  form label {
+    font-size: 0.4rem;
+  }
+
+  form input {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 247px) {
+  #succes-stat .btn {
+    padding: 0.5em 0;
+  }
+
+  #card-number {
+    font-size: 0.4rem;
+  }
+
+  #card-front-container,
+  #card-back-container {
+    height: 15vh;
+  }
+
+  #card-front-container img {
+    width: 20%;
+  }
+
+  #card-back-container p {
+    font-size: 0.6rem;
+  }
+}
