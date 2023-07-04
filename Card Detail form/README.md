@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-card-detail-form-using-html-css-and-vanilla-javascript--QJfKoCBJg](https://www.frontendmentor.io/solutions/responsive-card-detail-form-using-html-css-and-vanilla-javascript--QJfKoCBJg)
+- Live Site URL: [https://carddetailformfrontend.netlify.app/](https://carddetailformfrontend.netlify.app/)
 
 ## My process
 
