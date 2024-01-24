@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <header>
+      <img src="./images/logo.svg" alt="logo image" />
+      <div class="nav-bar-menu">
+        <img
+          src="./images/icon-close-menu.svg"
+          alt="menuicon close"
+          class="menu-icon-close"
+          id="close-menu"
+        />
+        <div class="header-el">
+          <div class="dropdown">
+            <a href="#" id="dropdown-link1"
+              >Features
+              <img
+                src="./images/icon-arrow-down.svg"
+                alt="down arrow"
+                class="arrow-el"
+              />
+            </a>
+            <div class="dropdown-content content1">
+              <a href="#">
+                <img src="./images/icon-todo.svg" alt="Todo list svg" />
+                Todo List</a
+              >
+
+              <a href="#">
+                <img src="./images/icon-calendar.svg" alt="Calender Svg" />
+                Calender
+              </a>
+
+              <a href="#">
+                <img
+                  src="./images/icon-reminders.svg"
+                  alt="Reminders svg"
+                />Reminders
+              </a>
+
+              <a href="#">
+                <img
+                  src="./images/icon-planning.svg"
+                  alt="Planning Svg"
+                />Planning
+              </a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" id="dropdown-link2"
+              >Company<img
+                src="./images/icon-arrow-down.svg"
+                alt="down arrow"
+                class="arrow-el"
+            /></a>
+            <div class="dropdown-content content2">
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </div>
+          </div>
+
+          <a href="#">Careers</a>
+
+          <a href="#">About</a>
+        </div>
+
+        <div class="header-el-2">
+          <a href="#">Login</a>
+          <button class="btn btn-head">Register</button>
+        </div>
+      </div>
+      <img
+        src="./images/icon-menu.svg"
+        alt="menu Svg"
+        class="menu-icon-open"
+        id="open-menu"
+      />
+    </header>
+    <main>
+      <div class="hero">
+        <div class="hero-content">
+          <h1><span>Make</span> remote work</h1>
+          <p>
+            Get your team in sync. no matter your location.Streaming processes,
+            create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn hero-btn">Learn more</button>
+          <div class="logos">
+            <img src="./images/client-databiz.svg" alt="Databiz logo" />
+            <img src="./images/client-audiophile.svg" alt="Audiophile logo" />
+            <img src="./images/client-meet.svg" alt="Meet logo" />
+            <img src="./images/client-maker.svg" alt="Maker logo" />
+          </div>
+        </div>
+        <div class="hero-img">
+          <img
+            src="./images/image-hero-desktop.png"
+            alt="hero image"
+            id="main-img"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/SudipKhatri036" target="_blank"
+          >Sudip khatri</a
+        >.
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
