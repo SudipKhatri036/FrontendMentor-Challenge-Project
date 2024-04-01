@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-faq-accordion-using-html-css-and-vanilla-javascript-BckKiaAisK](https://www.frontendmentor.io/solutions/responsive-faq-accordion-using-html-css-and-vanilla-javascript-BckKiaAisK)
+- Live Site URL: [https://faqaccordianfrontend.netlify.app/](https://faqaccordianfrontend.netlify.app/)
 
 ## My process
 
